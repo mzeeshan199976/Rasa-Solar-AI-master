@@ -1,0 +1,24 @@
+version: "2.0"
+
+stories:
+
+- story: path1
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: give_option
+  - action: action_handle_options
+
+- story: path2
+  steps:
+  - intent: greet2
+  - action: utter_greet
+  - intent: give_option
+  - action: action_handle_options
+
+- story: path3
+  steps:
+  - intent: pakistani_greet
+  - action: utter_greet
+  - intent: give_option
+  - action: action_handle_options

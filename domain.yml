@@ -1,0 +1,64 @@
+version: "2.0"
+
+intents:
+  - greet1
+  - greet2
+  - pakistani_greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - give_option
+  - main_menu
+
+actions:
+  - action_handle_options
+  - action_handle_benefits
+  - action_handle_self
+  - action_handle_learn_more
+
+entities:
+  - option
+
+slots:
+  option:
+    type: text
+  submenu: 
+    type: text
+    initial_value: "main"
+    influence_conversation: false
+  suboption:
+    type: text
+    influence_conversation: false
+  finaloption:
+    type: text
+    influence_conversation: false
+
+responses:
+  utter_greet:
+  - text: " Salam, this is Sunny 🌞 an intelligent chatbot powered by SolarAi ⚡\n
+I can help you find out how much you can save on your electricity bills 💵 while helping out our planet 🌏\n
+I will also help answer general queries relating to offsetting expensive & unstable grid energy 💥 with cheaper planet-friendly solar energy 🙋‍♂\n\t
+\n Main Menu:\n
+Please choose from the following options 👇\n
+    \t\t1.  Benefits of planet-friendly Solar Energy 🚀\n
+    \t\t2.  Quick self-assessment of your solarization potential 🚦\n
+    \t\t3.  Learn more about Solar Ai and my human coworkers 💁 "
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "This is Sunny 🌞 an intelligent chatbot powered by SolarAi ⚡"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
