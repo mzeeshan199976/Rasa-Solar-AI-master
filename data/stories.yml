@@ -6,19 +6,27 @@ stories:
   steps:
   - intent: greet1
   - action: utter_greet
-  - intent: give_option
-  - action: action_handle_options
+  - intent: benefits
+  - action: utter_benefits
 
 - story: path2
   steps:
-  - intent: greet2
+  - intent: greet1
   - action: utter_greet
-  - intent: give_option
-  - action: action_handle_options
+  - intent: financial_benefits
+  - action: utter_financial_benefits
 
 - story: path3
   steps:
-  - intent: pakistani_greet
+  - intent: greet1
   - action: utter_greet
-  - intent: give_option
-  - action: action_handle_options
+  - intent: environmental_benefits
+  - action: utter_environmental_benefits
+
+- story: path4
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: net_metering
+  - action: utter_net_metering
+

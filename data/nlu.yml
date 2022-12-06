@@ -131,18 +131,48 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: give_option
+- intent: benefits
   examples: |
-    - [1](option)
-    - [2](option)
-    - [3](option)
-    - [4](option)
-    - [5](option)
-    - [6](option)
-    - [7](option)
-    - [8](option)
+    - Why should I go solar?
+    - advantages of solar
+    - benefits solar
+    - benefits of solar
+    - why solar
+    - should i go solar
+    - is solar good 
+    - is solar better
 
-- intent: main_menu
+- intent: financial_benefits
   examples: |
-    - menu
-    - main menu
+    - what are financial benefits of solar
+    - financial benefits
+    - is solar financially good for me
+    - is solar cost saving
+    - money saving
+    - cost saving
+    - is solar cost effective
+    - cost effective
+
+- intent: net_metering
+  examples: |
+    - net metering
+    - what is net metering
+    - process of net metering
+    - define net metering
+    - net metering service
+
+- intent: environmental_benefits
+  examples: |
+    - What are the environmental benefits of solar energy?
+    - environmental benfits
+    - is solar evvironment freindly
+    - environment friendly
+
+- intent: working
+  examples: |
+    - How do solar photovoltaic (PV) panels work?
+    - How do solar panels work for my home?
+    - how solar panel works
+    - working of solar
+    - photovoltaic panels
+    - solar panels for homes

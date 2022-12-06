@@ -12,12 +12,3 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: main menu
-  steps:
-  - intent: main_menu
-  - action: utter_greet
-
-- rule: option call
-  steps: 
-  - intent: give_option
-  - action: action_handle_options

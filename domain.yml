@@ -10,31 +10,12 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - give_option
-  - main_menu
+  - benefits
+  - financial_benefits
+  - net_metering
+  - environmental_benefits
+  - working
 
-actions:
-  - action_handle_options
-  - action_handle_benefits
-  - action_handle_self
-  - action_handle_learn_more
-
-entities:
-  - option
-
-slots:
-  option:
-    type: text
-  submenu: 
-    type: text
-    initial_value: "main"
-    influence_conversation: false
-  suboption:
-    type: text
-    influence_conversation: false
-  finaloption:
-    type: text
-    influence_conversation: false
 
 responses:
   utter_greet:
@@ -46,6 +27,26 @@ Please choose from the following options 👇\n
     \t\t1.  Benefits of planet-friendly Solar Energy 🚀\n
     \t\t2.  Quick self-assessment of your solarization potential 🚦\n
     \t\t3.  Learn more about Solar Ai and my human coworkers 💁 "
+
+  utter_benefits:
+  - text: "“Solar power is the last energy resource that isn't owned yet - nobody taxes the sun yet.” 🌞\n
+World typically produces around 51 billion tons of Carbon Emissions every year, and the power sector alone contributes to about a quarter of these emissions. 💨\n
+There is no path to deep decarbonization without involving the clean power sector, and there is no path to clean power without deploying significant Solar energy.❗\n
+With the increase in energy demands and grid rates, solar may be the best option for both your home and business.\n
+You may select any of the following options to know more about solar energy! 👇"
+
+  utter_financial_benefits:
+  - text: "When you install a solar energy system on your property, you save money on your electricity bills instantly 💸 and protect yourself against rising electricity rates in the future. 😱 \n
+How much you can save depends on the utility rates and type of Solar PV system, but going solar is a smart investment regardless of where you live. \n
+Typical payback period for home users is around 3 years for net-metering solar systems. And typical levelized cost of energy for Commercial & Industrial Solar PV plants is under PKR 3 over the lifetime of PV Plant. 💡\n "
+
+  utter_net_metering:
+  - text: "Net metering is the system that electricity distribution companies use to credit solar energy system owners for the electricity produced by their solar panels. With net metering, you can sell the extra electricity produced by your solar unit to the grid. You can offset expensive electricity bills and attain energy independence via Solar-led net-metering. \n
+For more information, please visit our website (website)"
+
+  utter_environmental_benefits:
+  - text: "Solar power, like other renewable energy resources, has many environmental and health benefits. Going solar reduces greenhouse gas emissions, which contribute to climate change, and also results in fewer air pollutants like sulfur dioxide and particulate matter, which can cause health problems. World at large typically emits 51 billion tons of GHGs in the year, and more than one fifth of this carbon footprint has a lifetime of over 10,000 years. \n
+Typically, a 10-kW residential Solar Solution can offset roughly 13.5 tons of carbon footprint per year. Meanwhile, Pakistan’s carbon emissions are roughly 1.5 tons per capital. 💡 . "
 
   utter_did_that_help:
   - text: "Did that help you?"
