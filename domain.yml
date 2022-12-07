@@ -23,17 +23,37 @@ intents:
   - maintainance_cost
   - out_of_scope/other
   - finance
+  - lease
+  - EPC_PPA
+  - solar_cost
+  - roof_size
+  - solar_size
+  - roof_replace
+  - expiry_date
+  - solar_quote
+  - services
+  - solar_quote_accuracy
+  - panel_types
+  - inverter_types
+  - batteries
+
+entities:
+- firstN
+
+slots:
+  firstN:
+    type: text
+    auto_fill: false
+
+  email:
+    type: text
+    auto_fill: false
 
 responses:
   utter_greet:
   - text: " Salam, this is Sunny 🌞 an intelligent chatbot powered by SolarAi ⚡\n
 I can help you find out how much you can save on your electricity bills 💵 while helping out our planet 🌏\n
-I will also help answer general queries relating to offsetting expensive & unstable grid energy 💥 with cheaper planet-friendly solar energy 🙋‍♂\n\t
-\n Main Menu:\n
-Please choose from the following options 👇\n
-    \t\t1.  Benefits of planet-friendly Solar Energy 🚀\n
-    \t\t2.  Quick self-assessment of your solarization potential 🚦\n
-    \t\t3.  Learn more about Solar Ai and my human coworkers 💁 "
+I will also help answer general queries relating to offsetting expensive & unstable grid energy 💥 with cheaper planet-friendly solar energy 🙋‍♂\n"
 
   utter_benefits:
   - text: "“Solar power is the last energy resource that isn't owned yet - nobody taxes the sun yet.” 🌞\n
@@ -79,6 +99,66 @@ Meanwhile for Captive Power Factories, adding Solar Plants in the power mix can 
 
   utter_maintainance_cost:
   - text: "Solar panel systems are made of durable tempered glass and require little to no maintenance for the 25 to 30 years. In most cases, you don’t even need to clean your solar panels regularly. If something does happen, most equipment manufacturers include warranties, although warranty terms depend on the OEM."
+
+  utter_finance:
+  - text: "Solar Ai has partnered with multiple banks, including JS Bank, for expedited application approval for Solar financing. If you are a business owner and interested in Power Purchase Agreement, there are options available to get a discount on your existing expensive electricity bills without investing upfront costs of the Solar Plant.\n
+You may want to reach out to our business analysts at [link to set up appointment form] to discuss further your financing options."
+
+  utter_lease:
+  - text: "If you buy your Solar System, you are able to maximize your financial savings immediately. Meanwhile, leasing your PV System might be more prudent if your cost of capital is high and cost of debt is low. Depending upon the situation unique to your circumstance, benefits of either self-financing or bank financing can be weighed to arrive at a better-informed decision.\n
+Our expert team at Solar Ai can help curate a Solarization package for you and you can book your consultation session at [link to calendar invite]"
+
+  utter_EPC_PPA:
+  - text: "For Commercial & Industrial purposes, users can opt for either EPC or PPA options. In the former, an EPC firm such as Solar Ai, is hired to design a custom engineered solution unique to the business. Site surveys, existing power mix analysis, PV System Simulations, financial modeling and levelized cost of energy savings are prepared for the client along with suggestions on optimal equipment selection. A C&I user, after careful evaluation of the proposals by EPC and/or Solar consultants, awards a self-funded or bank-funded EPC contract.\n
+However, in Power Purchase Agreement [PPA], an entity undertakes all the work of the EPC, but negotiates an energy tariff with C&I users, typically between 15 and 25 years, to deploy Solar PV Plant. Capital for the plant is arranged by the entity signing the PPA with C&I user."
+
+  utter_solar_cost:
+  - text: "If you can afford to pay your electricity bill you can afford to go solar. Subsidized bank loans at or under 6% for Solar Home or Business financing makes the proposition even more compelling.\n
+Furthermore, Commercial and Industrial entities might also be able to get Carbon Emissions Reduction Credits that can be traded at international markets for additional financial benefits."
+
+  utter_roof_size:
+  - text: "Southerly-facing roofs with little to no shade and enough space to fit a solar panel system are ideal for installing traditional solar systems. However, in many cases there are workarounds if your home doesn’t have the ideal solar roof.\n
+We at Solar Ai, have introduced Power Optimizers based inverters, to specifically address the shading issue as well as transforming each Solar module into an intelligent unit optimized for harnessing maximum energy.\n
+Follow the easy stepwise guide on our website www.solarai.energy to learn more about all of your options."
+
+  utter_solar_size:
+  - text: "The size of your solar energy system will depend on how much electricity you use on a monthly basis, as well as the weather conditions where you live. Take a look at our website and follow the “Get a quotation” journey to get a customized solution catering to all your electricity needs."
+
+  utter_roof_replace:
+  - text: "Solar energy systems can last for 25 to 30 years, and it can be costly to remove and reinstall them if you need to replace your roof. If your roof needs maintenance in the near term, you should complete it before you finish your solar installation. Our technical personnel at Solar Ai will be able to tell you whether to replace your roof before going solar.\n
+Get in touch with our team at (Number) or website."
+
+  utter_expiry_date:
+  - text: "In general, solar panels are very durable and capable of withstanding snow, wind, and hail. The various components of your solar power system, such as inverters, will need to be replaced at different times, but your system should continue to generate electricity for 25 to 30 years.\n
+Our special offering includes an industry leading 12-year Standard Warranty for Power-Optimizer based inverters, an award-winning German technology. You can find out more about our offers at www.solarai.energy"
+
+  utter_solar_quote:
+  - text: "Type, quote me at any time during your conversation and start your journey for a custom quote. Alternatively, go to “Section 2.3: Quick self-assessment of my solarization potential” or visit our website (website) and select “Get an Instant Quote”.\n
+Follow the easy steps to get a solar quote according to your needs. OR contact one of our team members directly by calling (number)"
+  
+  utter_services:
+  - text: ""
+
+  utter_solar_quote_accuracy:
+  - text: "The first step of the process to get a solar quote from us gives you an estimated price according to your general locality (city). In the second step, we will present you with a personalized and accurate quotation along with your custom-built System Design based on your physical address, the available area on your rooftop to install solar panels, and a few other engineering parameters.\n
+In the final step, our team will physically visit your address to evaluate, confirm and present you with a final quotation free of charge."
+  
+  utter_panel_types:
+  - text: "We have three main types of efficient Solar PV Modules:\n
+1.	Standard (Mono PERC Half Cut, Tilling Ribbon): Module Efficiency +21% \n
+2.	Bifacial (Mono PERC Half Cut): Module Efficiency +21% with up to 25% gain from the bifacial (from the rear side of the module)\n  
+3.	All Black (Mono PERC): (Mono PERC Half Cut): Module Efficiency +21% (For immaculate aesthetics of your home facade)"
+
+  utter_inverter_types:
+  - text: "We offer two types of Solar Inverters:\n
+1.	Traditional Inverter:\n
+\t\tThese are the most commonly used inverters in conventional PV Systems. They are based on legacy technology which starts off with maximum energy production but gradually the output energy decays over the span of years. So the efficiency of the system gradually reduces after the first year of usage, and keeps on reducing at a slow pace.\n
+2.	Solar-Edge Inverter:\n
+\t\tThese are based on leading German technology used in advanced PV systems. This technology enables the PV system to maintain its maximum efficiency even after years of usage. The optimizer-based technology used in Solar-Edge Inverters produces more energy as compared to Traditional Inverters and hence is more efficient over the span of years."
+
+  utter_batteries:
+  - text: "Solar power systems that include solar batteries, known as solar-plus-storage, are increasingly popular, but can be pricey. However, with the current situation of the grid system in Pakistan, it may be a good option to opt for solar batteries with your solar power system for homes, as it will help in providing electricity during load-shedding and you also will have the option to draw electricity from batteries during peak hours to further reduce your electricity bill. \n
+Growingly, large-scale Energy Storage Systems (ESS) of 1 MW and above rated storage capacities are also being deployed by Commercial & Industrial users in the South Asian region. Such large scale ESS solutions are able to harness solar energy from PV Plant and are able to address intermittency bottlenecks of integrating Solar in existing power mix.  "
 
   utter_did_that_help:
   - text: "Did that help you?"

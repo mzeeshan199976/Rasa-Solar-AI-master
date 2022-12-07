@@ -1,6 +1,7 @@
 version: "2.0"
 
 nlu:
+
 - intent: pakistani_cities
   examples: |
     - [Karachi](pk_city)
@@ -262,7 +263,7 @@ nlu:
     - is solar cheap
     - what is the cost of solar
 
-- intent: roof
+- intent: roof_size
   examples: |
     - Is my roof suitable for solar panels?
     - suitable roofs for solar panels
@@ -273,26 +274,72 @@ nlu:
     - What size solar energy system should I get?
     - what are the sizes of solar
     - ideal solar size
-    - 
+    - how big solar panel is needed
+    - what size of solar panel is sufficient
+    - sufficient solar size
 
-- intent: roof
+- intent: roof_replace
   examples: |
-    - Is my roof suitable for solar panels?
-    - suitable roofs for solar panels
-    - suitable roof
-
-- intent: roof
+    - Do I need to replace my roof before going solar?
+    - Should I rebuild my roof before installing solar power?
+    - Does my roof need renovation before solar?
+ 
+- intent: expiry_date
   examples: |
-    - Is my roof suitable for solar panels?
-    - suitable roofs for solar panels
-    - suitable roof
+    - How long will my solar power system last?
+    - What is the lifespan of my solar energy system?
+    - what is time period of solar panels?
+    - What is Lifetime of Solar panels?
+    - What is the durability of solar panels?
 
-- intent: roof
+- intent: solar_quote
   examples: |
-    - Is my roof suitable for solar panels?
-    - suitable roofs for solar panels
-    - suitable roof
+    - How do I get a solar quote?
+    - How can I request a solar quote?
+    - How can I order a solar quote?
+    - How can I receive a solar quote?
+    - Can you provide me a solar quote?
 
+- intent: services
+  examples: |
+    - What services do I get with Solar AI?
+    - What solutions does Solar AI provide?
+    - What services does Solar AI provide?
+    - What assistance does Solar AI deliver?
+    - What solutions does Solar AI offer?
+
+- intent: solar_quote_accuracy
+  examples: |
+    - How accurate is the solar quote that I get from you?
+    - How reliable is the solar quotation I received from you?
+    - Credibility of the solar quote?
+    - Reliability of solar quote?
+    - Is your solar quote accurate?
+    - Can I trust your solar quote?
+
+- intent: panel_types
+  examples: |
+    - What are the different types of solar panels?
+    - What are various kinds of solar panel?
+    - What are different kinds of solar panel?
+    - What are variants of solar panel?
+    - Are there multiple solar panels?
+
+- intent: inverter_types
+  examples: |
+    - What are the different types of power inverters?
+    - What are various kinds of power inverters?
+    - What are different kinds of power inverters?
+    - What are variants of power inverters?
+    - Are there multiple power inverters?
+
+- intent: batteries
+  examples: |
+    - Do I need to install solar batteries with my solar power system?
+    - are solar batteries required with solar power system?
+    - does solar power system need solar batteries?
+    - Are solar batteries important for solar system?
+  
 - intent: out_of_scope
   examples: |
     - I am asking you an out of scope question
@@ -328,7 +375,7 @@ nlu:
     - I need a GP in 94301
     - I need a girl friend!
     - I need to eat cake
-    - I wan to buy a plane
+    - I want to buy a plane
     - I wanna marry you
     - I want a new laptop
     - I want book a hotel

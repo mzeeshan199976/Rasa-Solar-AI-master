@@ -8,7 +8,6 @@ stories:
   - action: utter_greet
   - intent: benefits
   - action: utter_benefits
-  - action: utter_greet
 
 - story: path2
   steps:
@@ -28,8 +27,148 @@ stories:
   steps:
   - intent: greet1
   - action: utter_greet
+  - intent: environmental_benefits
+  - action: utter_environmental_benefits
+
+- story: path5
+  steps:
+  - intent: greet1
+  - action: utter_greet
   - intent: net_metering
   - action: utter_net_metering
+
+- story: path6
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: working
+  - action: utter_working
+
+- story: path7
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: sunshine
+  - action: utter_sunshine
+
+- story: path8
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: dust
+  - action: utter_dust
+
+- story: path9
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: offgrid
+  - action: utter_offgrid
+
+- story: path10
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: solar_bill
+  - action: utter_solar_bill
+
+- story: path11
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: blackout
+  - action: utter_blackout
+
+- story: path14
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: maintainance_cost
+  - action: utter_maintainance_cost
+
+- story: path15
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: finance
+  - action: utter_finance
+
+- story: path16
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: lease
+  - action: utter_lease
+
+- story: path17
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: EPC_PPA
+  - action: utter_EPC_PPA
+
+- story: path18
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: solar_cost
+  - action: utter_solar_cost
+
+- story: path19
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: roof_size
+  - action: utter_roof_size
+
+- story: path20
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: solar_size
+  - action: utter_solar_size
+  
+- story: path21
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: roof_replace
+  - action: utter_roof_replace
+
+- story: path22
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: solar_quote
+  - action: utter_solar_quote
+
+- story: path23
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: solar_quote_accuracy
+  - action: utter_solar_quote_accuracy
+
+- story: path24
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: panel_types
+  - action: utter_panel_types
+
+- story: path25
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: inverter_types
+  - action: utter_inverter_types
+
+- story: path25
+  steps:
+  - intent: greet1
+  - action: utter_greet
+  - intent: batteries
+  - action: utter_batteries    
 
 - story: scope
   steps: 
