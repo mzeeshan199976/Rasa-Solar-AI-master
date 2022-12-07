@@ -15,7 +15,14 @@ intents:
   - net_metering
   - environmental_benefits
   - working
-
+  - sunshine
+  - dust
+  - offgrid
+  - solar_bill
+  - blackout
+  - maintainance_cost
+  - out_of_scope/other
+  - finance
 
 responses:
   utter_greet:
@@ -48,6 +55,31 @@ For more information, please visit our website (website)"
   - text: "Solar power, like other renewable energy resources, has many environmental and health benefits. Going solar reduces greenhouse gas emissions, which contribute to climate change, and also results in fewer air pollutants like sulfur dioxide and particulate matter, which can cause health problems. World at large typically emits 51 billion tons of GHGs in the year, and more than one fifth of this carbon footprint has a lifetime of over 10,000 years. \n
 Typically, a 10-kW residential Solar Solution can offset roughly 13.5 tons of carbon footprint per year. Meanwhile, Pakistan’s carbon emissions are roughly 1.5 tons per capital. 💡 . "
 
+  utter_working:
+  - text: "Solar panels absorb the sun's energy throughout the day and convert it into direct current (DC) electricity. Most homes and businesses run on alternating current (AC) electricity, so the DC electricity is then passed through an inverter to convert it to usable AC electricity. At that point, you either use the electricity in your house or send it back to the electric grid for net-metering."
+  
+  utter_sunshine:
+  - text: "The amount of power your solar energy system can generate is dependent on sunlight. As a result, your solar panels will produce slightly less energy when the weather is cloudy, and no energy at night. However, because of high electricity costs and financial incentives, solar is a smart decision even if you live in a cloudy city. Typically, in Pakistan, you get an average of about 4.7 hours of sunlight, this varies from city to city meanwhile.\n
+You can also add battery backup in the system design to conserve energy while the sun is shining and consume stored energy during the night / on-peak times."
+
+  utter_dust:
+  - text: "Solar panels convert sunshine into power, so if your panels are covered in dust, they can’t produce electricity effectively. Dust generally isn’t heavy enough to cause structural issues with your panels, and your panels can be cleaned by watering or using cleaning systems for PV. If dust does accumulate, your panels are easy to clean.\n
+Also, by opting for a Power Optimizer based system design, you can offset the impact of soiling losses or dust losses to solar generated energy while future-proofing your PV System.\n
+You can learn more about intelligence-driven power optimizer-based inverters at [Web link]"
+
+  utter_offgrid:
+  - text: "When you install solar panels on your property, you will still be connected to the grid. This allows you to draw from the grid when your system is not producing all of the power that you need, and send power back to the grid when you produce more than you use. It is possible to go off the grid with a solar energy system that includes battery storage, but it will cost significantly more and is usually not required for the majority of grid-connected homeowners.\n
+Meanwhile for Captive Power Factories, adding Solar Plants in the power mix can significantly bring down your levelized cost of energy while offsetting your carbon footprint."
+
+  utter_solar_bill:
+  - text: "Unless your solar energy system includes battery storage and you are fully off the grid, you will still receive a bill from your utility. However, you can dramatically reduce your bill with a solar panel system that matches your energy use."
+
+  utter_blackout:
+  - text: "If your solar panel system is connected to the grid, it will shut off in the event of a blackout. This is to prevent emergency responders and electricity utility repair-people from being injured by your panels sending power back to the grid. However, there are certain inverters you can buy that provide backup power in a blackout when paired with an Energy Storage System."
+
+  utter_maintainance_cost:
+  - text: "Solar panel systems are made of durable tempered glass and require little to no maintenance for the 25 to 30 years. In most cases, you don’t even need to clean your solar panels regularly. If something does happen, most equipment manufacturers include warranties, although warranty terms depend on the OEM."
+
   utter_did_that_help:
   - text: "Did that help you?"
 
@@ -59,6 +91,9 @@ Typically, a 10-kW residential Solar Solution can offset roughly 13.5 tons of ca
 
   utter_iamabot:
   - text: "This is Sunny 🌞 an intelligent chatbot powered by SolarAi ⚡"
+
+  utter_out_of_scope:
+  - text: "Sorry I don't understand what you are saying."
 
 session_config:
   session_expiration_time: 60
