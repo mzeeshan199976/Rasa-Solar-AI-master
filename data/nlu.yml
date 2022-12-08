@@ -368,6 +368,11 @@ nlu:
     - quote me 
     - i am interested
     - i want to apply
+    - Quick self-assessment of my solarization potential.
+    - A quick self-evaluation of my solarization potential.
+    - Can you provide me an evaluation of Solar potential.
+    - order a solar quote
+
   
 - intent: out_of_scope
   examples: |
