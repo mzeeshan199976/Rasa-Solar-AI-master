@@ -174,3 +174,16 @@ stories:
   steps: 
   - intent: out_of_scope
   - action: utter_out_of_scope
+
+
+- story: Activate form
+  steps:
+  - intent: quote_me
+  - action: utter_name
+  - intent: get_name
+  - action: utter_number
+  - intent: get_number
+  - action: utter_email
+  - intent: get_email
+  - action: get_user_data
+  - action: utter_confirm

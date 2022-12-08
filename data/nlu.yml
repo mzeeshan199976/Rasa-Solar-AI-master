@@ -339,6 +339,35 @@ nlu:
     - are solar batteries required with solar power system?
     - does solar power system need solar batteries?
     - Are solar batteries important for solar system?
+
+- intent: get_name
+  examples: |
+    - my name is [ali](name)
+    - i am [ali](name)
+    - my name is [saad](name)
+    - i am [saad](name)
+    - my name is [farhad](name)
+    - i am [farhad](name)
+    - [zeeshan](name)
+    - [irfan](name)
+
+- intent: get_email
+  examples: |
+    - my email is [abc@gmail.com](email)
+    - this is my [abc@example.com](email)
+    - [mxeeshan1999@gmail.com](email)
+
+- intent: get_number
+  examples: |
+    - my number is [03075753511](number)
+    - this is my [03156785544](number)
+    - [03015544233](number)
+
+- intent: quote_me
+  examples: |
+    - quote me 
+    - i am interested
+    - i want to apply
   
 - intent: out_of_scope
   examples: |
@@ -715,3 +744,4 @@ nlu:
     - sudo reboot
     - asdfgasd
     - asdfgasdas
+

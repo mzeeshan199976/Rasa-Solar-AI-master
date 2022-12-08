@@ -36,18 +36,28 @@ intents:
   - panel_types
   - inverter_types
   - batteries
+  - get_name
+  - get_email
+  - quote_me
+  - get_number
+
+actions:
+  - get_user_data
 
 entities:
-- firstN
+  - name
+  - email
+  - number
 
 slots:
-  firstN:
+  name:
     type: text
-    auto_fill: false
-
   email:
     type: text
-    auto_fill: false
+    influence_conversation: false
+  number:
+    type: text
+    influence_conversation: false
 
 responses:
   utter_greet:
@@ -159,6 +169,18 @@ In the final step, our team will physically visit your address to evaluate, conf
   utter_batteries:
   - text: "Solar power systems that include solar batteries, known as solar-plus-storage, are increasingly popular, but can be pricey. However, with the current situation of the grid system in Pakistan, it may be a good option to opt for solar batteries with your solar power system for homes, as it will help in providing electricity during load-shedding and you also will have the option to draw electricity from batteries during peak hours to further reduce your electricity bill. \n
 Growingly, large-scale Energy Storage Systems (ESS) of 1 MW and above rated storage capacities are also being deployed by Commercial & Industrial users in the South Asian region. Such large scale ESS solutions are able to harness solar energy from PV Plant and are able to address intermittency bottlenecks of integrating Solar in existing power mix.  "
+
+  utter_name:
+  - text: "Please Enter Your name"
+
+  utter_email:
+  - text: "Please enter your email"
+
+  utter_number:
+  - text: "Please enter your number"
+
+  utter_confirm:
+  - text: "your data is {name},{number} & {email}"
 
   utter_did_that_help:
   - text: "Did that help you?"
