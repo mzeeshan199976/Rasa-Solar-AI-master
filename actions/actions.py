@@ -28,15 +28,13 @@ class ActionHelloWorld(Action):
         if name is not None:
             if number is not None:
                 if email is not None:
-                    select_all_tasks(conn,name,number,email)
+                    cur = conn.cursor()
+                    cur.execute(f"""INSERT INTO Customer(Name,Contact,Email) VALUES(?,?,?);""",(name,number,email))
+                    conn.commit()
+                    #select_all_tasks(conn,name,number,email)
         return []
 
 def create_connection(db_file):
-    """ create a database connection to the SQLite database
-        specified by the db_file
-    :param db_file: database file
-    :return: Connection object or None
-    """
     conn = None
     try:
         conn = sqlite3.connect(db_file)
@@ -45,16 +43,16 @@ def create_connection(db_file):
 
     return conn
 
-def select_all_tasks(conn,name,number,email):
+# def select_all_tasks(conn,name,number,email):
 
-    cur = conn.cursor()
-    cur.execute("INSERT INTO Customer (Name,Contact,Email) VALUES({name},{number},{email});")
+#     cur = conn.cursor()
+#     cur.execute("""INSERT INTO Customer (Name,Contact,Email) VALUES(name,number,email);""")
 
-    conn.commit()
-    rows = cur.fetchall()
+#     conn.commit()
+#     rows = cur.fetchall()
 
-    for row in rows:
-        print(row)
+#     for row in rows:
+#         print(row)
 
 
 
