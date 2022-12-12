@@ -350,18 +350,83 @@ nlu:
     - i am [farhad](name)
     - [zeeshan](name)
     - [irfan](name)
+    - [saad](name)
+    - [rauf](name)
+    - [fatime](name)
+    - [hammad](name)
+    - [iqra](name)
+    - [Hamza hashmi](name)
+    - [wajahat abbas](name)
+    - [iqbal mehdi](name)
+    - [shaur ahsan](name)
+    - [bilal asghar](name)
+    - [bilal rana](name)
+    - [muhammad shoaib](name)
+    - [hamza shah](name)
+    - [fatima ghaffar](name)
+    - [sheryar zakaria](name)
+    - [rauf ur raheem](name)
+    - [muhammad baqir](name)
+    - [afaq rasheed](name)
+    - [irfan ali](name)
+    - [muhammad zeeshan](name)
+    - [farhad ul hassan](name)
+    - [saad javaid](name)
+
 
 - intent: get_email
   examples: |
     - my email is [abc@gmail.com](email)
-    - this is my [abc@example.com](email)
+    - [abc@example.com](email)
     - [mxeeshan1999@gmail.com](email)
+    - [yabeyis828@eilnews.com](email)
+    - my email is [cohiv85461@edinel.com](email)
+    - [botiyay707@edinel.com](email)
+    - [ali@gmail.com](email)
+    - [saad@gmail.com](email)
+    - my email is [irfan@gmail.com](email)
+    - [fatima@gmail.com](email)
+    - [sheryar@gmail.com](email)
+    - [rauf@gmail.com](email)
+    - [raheem@gmail.com](email)
+    - [baqir12@hotmail.com]
+    - [mehdi96@yahoo.com]
+    - [zaryab88@outlook.com]
+    - [bilal99@softoo.co]
+    - [shaur66@brillanz.com]
+    - [rana99@softoo.com]
+    - my email is [wajahat45@brillanz.co]
+    - [wattoo43@gmail.com]
+    - [m.baqir_99@gmail.com]
+    - my email is [iqbal.mehdi_1999@gmail.com]
+    - [atif_aslam11@gmail.com]
+    - [rauf_ur.raheem94@gmail.com]
+    - my email is [irfan.ali_gilgit92@gmail.com]
+    - [saad.javaid87@gmail.com]
+    - [fatima.ghaffar@softoo.co]
+    - [m.zeeshan_887@hotmail.com]
+    - my email is [farhad.ul_hassan98@gmail.com]
+
 
 - intent: get_number
   examples: |
     - my number is [03075753511](number)
-    - this is my [03156785544](number)
+    - [03156785544](number)
     - [03015544233](number)
+    - [03219944776]
+    - [03337190303]
+    - [03257000199]
+    - [03001007229]
+    - [03427642459]
+    - [03319196213]
+    - [03379218992]
+    - [03245318586]
+    - [03115123456]
+    - [03125122345]
+    - [03479800612]
+    - [03348907980]
+    - [03237890543]
+    - [03420091267]
 
 - intent: quote_me
   examples: |
